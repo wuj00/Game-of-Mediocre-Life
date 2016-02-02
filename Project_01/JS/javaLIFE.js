@@ -16,15 +16,16 @@ var spinDial = document.querySelector('.spin')
 var display = document.querySelector('#display')
 
 // function start() {
-document.querySelector('.spin').addEventListener("click", function(getRandom) {
+document.querySelector('.spin').addEventListener("click", getRandom)
+  function getRandom(min, max) {
+    display.innerText = Math.floor(Math.random() * 3) + 1;
     alert("Let's begin!");
     console.log("workkk");
-  })
-  function getRandom(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
+    }
 
 // }
+
+
 
 
 
