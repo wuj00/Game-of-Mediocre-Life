@@ -1,0 +1,28 @@
+body {
+  background-image: url('IMG/Mediocre LIFE Board Game-Path.png');
+  display:inline-block;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 1050px auto;
+}
+
+.spaces {
+  width: 40px;
+	height: 40px;
+	background: black;
+	border-radius: 50px;
+  opacity: 0.5;
+  background-position: center;
+  display: inline-block;
+}
+
+.spin {
+  display: inline-block;
+}
+
+#display {
+  width: 200px;
+  height: 100px;
+  border: 3px solid grey;
+}
