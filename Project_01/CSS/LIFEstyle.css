@@ -2,8 +2,8 @@ body {
   background-image: url('IMG/Mediocre LIFE Board Game-Path.png');
   display:inline-block;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  /*background-attachment: fixed;*/
+  /*background-position: center;*/
   background-size: 1050px auto;
 }
 
@@ -29,13 +29,24 @@ body {
   display: inline-block;
 }
 
-.spin {
-  display: inline-block;
+#display {
+  width: 50px;
+  height: 50px;
+  border: 12px dotted darkcyan;
+  border-radius: 50px;
+  display: block;
+  text-align: center;
+  font-family: Phosphate-solid;
+  font-size: 35px;
+  padding-top: 3px;
+  margin-top: -15px;
 }
 
-#display {
-  width: 200px;
-  height: 50px;
-  border: 3px solid grey;
+.spin {
   display: inline-block;
+  margin: -50px 30px;
+}
+
+h1 {
+  font-family: Phosphate-solid;
 }

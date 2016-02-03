@@ -1,4 +1,4 @@
-$(function(){
+// $(function(){
 
   /*Javascript Functions:
   	- Interactive players (x2)
@@ -21,16 +21,31 @@ $(function(){
   var moneyScore
   var display = document.querySelector('#display')
   var spaces = document.querySelectorAll('.spaces')
+  var randomNum = null
+  var player = null
+  var playerTwoTurn = false
 
   /*------------------------Spin Button------------------------*/
   var spinDial = document.querySelector('.spin')
 
   function getRandom(min, max) {
-    var randomNum = Math.floor(Math.random() * 3) + 1;
+    randomNum = Math.floor(Math.random() * 3) + 1
     display.innerText = randomNum
     //alert("Spin again!");
     //console.log("workkk");
     console.log(spaces[randomNum])
+  /*----------------------switching players-------------------------*/
+    if (playerTwoTurn) {
+      player = '#player2'
+      playerTwoTurn = false
+      console.log("player2 moves")
+    }
+    else {
+      player = '#player1'
+      playerTwoTurn = true
+      console.log("player1 moves")
+    }//calling function to move players
+    movePlayer(player, randomNum)
   }
 
   spinDial.addEventListener("click", getRandom)
@@ -40,26 +55,29 @@ $(function(){
      var plyPosition = $('.spaces').index($(who).parent())
      $('.spaces').eq(plyPosition + randomNum).append($(who))
   }
-  movePlayer('who', 5)
 
-  // for (i = 0; i < getRandom.length; i++) {
-  //   getRandom[i].addEventListener('click', function() {
-  //
-  //   })
-  // }
+  /*-----------------------score-moneyCounter-----------------------------*/
 
 
 
 
-  /*-----------------------players-----------------------------*/
-  function players(who) {
-      var playerOne = 0, '<img src="CSS/IMG/Hipster Girl.png" alt="Girl">'
-      var playerTwo = '<img src="CSS/IMG/Cooldude.png" alt="Boy">'
-      if (playerOne <= 0) {
-          this.innerText = moveForward
-      } else {
-        this.innerText = moveForward
-      }
-  }
 
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// })
