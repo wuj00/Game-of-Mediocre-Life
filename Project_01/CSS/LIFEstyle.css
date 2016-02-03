@@ -7,6 +7,18 @@ body {
   background-size: 1050px auto;
 }
 
+#player1 {
+  opacity: 1.0;
+  width: 45px;
+  height: 100px;
+}
+
+#player2 {
+  opacity: 1.0;
+  width: 50px;
+  height: auto;
+}
+
 .spaces {
   width: 40px;
 	height: 40px;
