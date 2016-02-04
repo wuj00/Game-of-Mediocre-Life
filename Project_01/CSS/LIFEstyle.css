@@ -1,4 +1,4 @@
-#container {
+/*#container {
     width: 1040px;
     height: 768px;
     position: relative;
@@ -7,31 +7,31 @@
   canvas { position: absolute; }
   #myCanvas { z-index: 3 }
   #spin { z-index: 1 }
-  #BG { z-index: 2 }
+  #BG { z-index: 2 }*/
 
 
-
-/*canvas {
+body {
   background-image: url('IMG/Mediocre LIFE Board Game-Path.png');
-  border: 10px inset grey;
+  /*border: 10px inset grey;*/
   display:inline-block;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 1050px auto;
   background-position: 80px 80px;
-}*/
+}
+
 #BG {
   display: none;
 }
 
 #player1 {
-  opacity: 1.0;
+  /*opacity: 1.0;*/
   width: 45px;
   height: 100px;
 }
 
 #player2 {
-  opacity: 1.0;
+  /*opacity: 1.0;*/
   width: 50px;
   height: auto;
 }
@@ -39,9 +39,8 @@
 .spaces {
   width: 40px;
 	height: 40px;
-	background: black;
+	/*background: transparent;*/
 	border-radius: 50px;
-  opacity: 0.5;
   background-position: center;
   display: inline-block;
 }
@@ -67,3 +66,50 @@
 h1 {
   font-family: Phosphate-solid;
 }
+
+/*#s1 {
+  border: 5px solid red;
+  background-color: transparent;
+  bottom: 200px;
+  left: 175px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+#s2 {
+  border: 5px solid grey;
+  background-color: transparent;
+  bottom: 110px;
+  left: 250px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+#s3 {
+  border: 5px solid grey;
+  background-color: transparent;
+  bottom: 200px;
+  left: 175px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+#s4 {
+  border: 5px solid grey;
+  background-color: transparent;
+  bottom: 200px;
+  left: 175px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+#s5 {
+  border: 5px solid grey;
+  background-color: transparent;
+  bottom: 200px;
+  left: 175px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}*/
