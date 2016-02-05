@@ -38,12 +38,12 @@
 
 
   var display = document.querySelector('#display')
-  var moneyScore = document.querySelectorAll('#player1-score', '#player2-score')
   var spaces = document.querySelectorAll('.spaces')
   var messageDiv = document.getElementById('message')
   var randomNum = null
-  var playerOneTurn = true
-  var $plyPosition
+  // var moneyScore = document.querySelectorAll('#player1-score', '#player2-score')
+  // var playerOneTurn = true
+  // var $plyPosition
 
   /*--------------------player properties----------------------*/
 
@@ -66,7 +66,7 @@
         movePlayer(current, randomNum)
         //alert("Spin again!");
         //console.log("workkk");
-      console.log(spaces[randomNum])
+      // console.log(spaces[randomNum])
   /*----------------------switching players-------------------------*/
         // if (playerOneTurn) {
         //     currentPlayer = '#player1'
@@ -96,15 +96,45 @@
         console.log("player1 moves")
         console.log(current.money)
         $('#player1-score').text(current.money) //add-subtract money from the score
+      getWinner()
         current = player2
       }
       else {
         console.log("player2 moves")
         $('#player2-score').text(current.money)
+      getWinner()
         current = player1
       }
       console.log(events['#s' + who.location].money)
     }
+
+    function getWinner() {
+      // console.log(player1, player2)
+      // if (player1.location === 20 && player2.location !== 20)
+      //       document.getElementById('#player1').disabled = true
+      if (player1.location > 20 && player2.location > 20)
+      if (player1.location === 20 && player2.location === 20) {
+
+          if (player1.money < player2.money) {
+            console.log("player2 wins!")
+            alert("Player 2 Wins!")
+            document.location.reload()
+          }
+          else if (player1.money > player2.money) {
+            console.log("player1 wins!")
+            alert("Player 1 Wins!")
+            document.location.reload()
+          }
+          else {
+            console.log("It's a tie!")
+          }
+        }
+        else {
+          console.log("continue playing")
+      }
+    }
+
+
 
         // $plyPosition = $('.spaces').index($(who).parent())
         // console.log(plyPosition)
