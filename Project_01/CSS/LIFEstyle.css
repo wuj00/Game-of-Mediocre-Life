@@ -32,14 +32,12 @@ body {
   height: auto;
 }
 
-.spaces {
-  width: 40px;
-	height: 40px;
+/*.spaces {
 	background: black;
 	border-radius: 50px;
   background-position: center;
   display: inline-block;
-}
+}*/
 
 #display {
   width: 50px;
@@ -61,6 +59,16 @@ body {
 
 h1 {
   font-family: Phosphate-solid;
+  letter-spacing: 2px;
+  line-height: 20px;
+  margin-left: 30px;
+}
+
+.fancy {
+  font-family: Porter;
+  font-weight: bolder;
+  font-size: 45px;
+  letter-spacing: 5px;
 }
 
 #player1-score{
@@ -82,10 +90,10 @@ h1 {
 }
 
 #start {
-  /*border: 5px solid red;*/
+  /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 200px;
-  left: 175px;
+  bottom: 230px;
+  left: 172px;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -94,8 +102,8 @@ h1 {
 #s1 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 110px;
-  left: 250px;
+  bottom: 135px;
+  left: 257px;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -103,8 +111,8 @@ h1 {
 #s2 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 170px;
-  left: 365px;
+  bottom: 195px;
+  left: 368px;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -112,7 +120,7 @@ h1 {
 #s3 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 300px;
+  bottom: 330px;
   left: 377px;
   width: 50px;
   height: 50px;
@@ -121,7 +129,7 @@ h1 {
 #s4 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 450px;
+  bottom: 472px;
   left: 377px;
   width: 50px;
   height: 50px;
@@ -131,8 +139,8 @@ h1 {
 #s5 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 560px;
-  left: 374px;
+  bottom: 610px;
+  left: 350px;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -141,8 +149,8 @@ h1 {
 #s6 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 590px;
-  left: 440px;
+  bottom: 638px;
+  left: 444px;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -151,8 +159,8 @@ h1 {
 #s7 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 515px;
-  left: 515px;
+  bottom: 552px;
+  left: 520px;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -161,7 +169,7 @@ h1 {
 #s8 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 400px;
+  bottom: 430px;
   left: 535px;
   width: 50px;
   height: 50px;
@@ -171,8 +179,8 @@ h1 {
 #s9 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 290px;
-  left: 560px;
+  bottom: 315px;
+  left: 562px;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -181,8 +189,8 @@ h1 {
 #s10 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 180px;
-  left: 580px;
+  bottom: 208px;
+  left: 565px;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -191,8 +199,8 @@ h1 {
 #s11 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 125px;
-  left: 640px;
+  bottom: 145px;
+  left: 642px;
   width: 40px;
   height: 40px;
   position: absolute;
@@ -201,8 +209,8 @@ h1 {
 #s12 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 210px;
-  left: 685px;
+  bottom: 233px;
+  left: 690px;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -211,7 +219,7 @@ h1 {
 #s13 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 330px;
+  bottom: 370px;
   left: 725px;
   width: 50px;
   height: 50px;
@@ -221,8 +229,8 @@ h1 {
 #s14 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 270px;
-  left: 800px;
+  bottom: 320px;
+  left: 805px;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -231,8 +239,8 @@ h1 {
 #s15 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 180px;
-  left: 830px;
+  bottom: 210px;
+  left: 810px;
   width: 40px;
   height: 40px;
   position: absolute;
@@ -241,7 +249,7 @@ h1 {
 #s16 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 120px;
+  bottom: 150px;
   left: 880px;
   width: 40px;
   height: 40px;
@@ -251,8 +259,8 @@ h1 {
 #s17 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 180px;
-  left: 930px;
+  bottom: 225px;
+  left: 940px;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -261,8 +269,8 @@ h1 {
 #s18 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 265px;
-  left: 940px;
+  bottom: 301px;
+  left: 942px;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -271,8 +279,8 @@ h1 {
 #s19 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 395px;
-  left: 965px;
+  bottom: 425px;
+  left: 968px;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -281,8 +289,8 @@ h1 {
 #s20 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 505px;
-  left: 990px;
+  bottom: 560px;
+  left: 970px;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -291,8 +299,8 @@ h1 {
 #s21 {
   /*border: 5px solid grey;*/
   background-color: transparent;
-  bottom: 505px;
-  left: 990px;
+  bottom: 552px;
+  left: 1020px;
   width: 50px;
   height: 50px;
   position: absolute;
