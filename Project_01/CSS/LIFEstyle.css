@@ -116,6 +116,7 @@ h1 {
 
 #message {
   font-family: Madeline;
+  font-weight: bold;
   font-size: 40px;
   margin-left: 1380px;
   margin-top: 100px;
@@ -136,7 +137,9 @@ h1 {
     z-index: -1px;
   }
 
-
+  div {
+      cursor:pointer;
+  }
 /*-------------------CSS for .spaces below-------------------*/
 
 #start {
