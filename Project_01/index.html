@@ -2,24 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>The Game of Mediocre LIFE</title>
+    <title>Mediocre LIFE</title>
     <link rel="stylesheet" type="text/css" href="CSS/LIFEstyle.css">
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   </head>
   <body>
-    <h1>WELCOME</h1>
+    <h1>The Game of <span class="fancy"> LIFE</span></h1>
     <h2><span id="display"></span></h2>
-    <div class="container">
       <!-- <canvas id="myCanvas" width="1040" height="768" style="border:1px solid #d3d3d3;"></canvas>
       <canvas id="BG"><img id="BG" src="CSS/IMG/Mediocre LIFE Board Game-Path.png" width="220" height="auto"></canvas>
       <canvas id="spin"><img src="CSS/IMG/Spin_dial.png" width="200px" height="auto"></canvas> -->
       <!-- <img id="BG" src="CSS/IMG/Mediocre LIFE Board Game-Path.png" width="220" height="auto"> -->
-      <div class= "spin"><img src="CSS/IMG/Spin_dial.png" width="200px" height="auto"></div>
+      <div class= "spin"><img src="CSS/IMG/Spin_dial.png" width="250px" height="auto"></div>
 
-      <div class ="container">
-          <div id="message"></div>
+      <div id ="container"></div>
+
           <div id="player1-score">Player 1</div>
+          <div id="dollar">$</div>
+          <div id="player1-display">50000</div>
+
           <div id="player2-score">Player 2</div>
+          <div id="dollar">$</div>
+          <div id="player2-display">50000</div>
+
+          <div class="messageCenter">Message Center</div>
+              <div id="message"></div>
 
           <div class= "spaces" id='start'>
               <span><img id='player1' src="CSS/IMG/Hipster Girl.png"></span>
@@ -58,7 +65,6 @@
 
 
         <script type="text/javascript" src="/Users/Mako/Fundamentals/Projects/Project_01/JS/javaLIFE.js"></script>
-    </div>
 
   </body>
 </html>
