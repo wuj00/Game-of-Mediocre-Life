@@ -10,50 +10,51 @@
   	- Pop-up for  beginning game, ending game. (ie: 'PLAYER 2' WINS)
   */
 
+  /*-------------------------Canvas----------------------------*/
+
+      // var canvas = document.getElementById('myCanvas')
+      // var dice = document.getElementById('spin')
+      // var context = canvas.getContext('2d')
+      // var x = 0
+      // var y = 0
+      // var width = 1040
+      // var height = 767
+      // var imageObj = new Image()
+      //
+      // imageObj.onload = function() {
+      //   context.drawImage(imageObj, x, y, width, height)
+      // };
+      // imageObj.src = 'CSS/IMG/Mediocre LIFE Board Game-Path.png'
+      //
+      //
+      // function init() {
+      // var ctx = myCanvas.getContext("2d");
+      //     ctx.fillStyle = "white";
+      //     ctx.fillRect(25,25,120,100);
+      //     ctx.font = "24pt Helvetica";
+      //     ctx.fillStyle = "black";
+      //     ctx.fillText("Notice:", 30, 55);
+      // }
+
 
   var display = document.querySelector('#display')
+  var moneyScore = document.querySelectorAll('#player1-score', '#player2-score')
   var spaces = document.querySelectorAll('.spaces')
+  var messageDiv = document.getElementById('message')
   var randomNum = null
-  var currentPlayer = null
   var playerOneTurn = true
-  // var turn = 2
+  var $plyPosition
 
   /*--------------------player properties----------------------*/
 
   var player1 = {money: 50000, location: 0, $id: $('#player1')}
-  var player2 = {money: 50000, location: 0}
+  var player2 = {money: 50000, location: 0, $id: $('#player2')}
+
+  var current = player1
+
   var game = {}
 
   game.players = [player1, player2]
-
-
-
-/*-------------------------Canvas----------------------------*/
-
-    // var canvas = document.getElementById('myCanvas')
-    // var dice = document.getElementById('spin')
-    // var context = canvas.getContext('2d')
-    // var x = 0
-    // var y = 0
-    // var width = 1040
-    // var height = 767
-    // var imageObj = new Image()
-    //
-    // imageObj.onload = function() {
-    //   context.drawImage(imageObj, x, y, width, height)
-    // };
-    // imageObj.src = 'CSS/IMG/Mediocre LIFE Board Game-Path.png'
-    //
-    //
-    // function init() {
-    // var ctx = myCanvas.getContext("2d");
-    //     ctx.fillStyle = "white";
-    //     ctx.fillRect(25,25,120,100);
-    //     ctx.font = "24pt Helvetica";
-    //     ctx.fillStyle = "black";
-    //     ctx.fillText("Notice:", 30, 55);
-    // }
-
 
   /*------------------------Spin Button------------------------*/
 
@@ -66,45 +67,48 @@
         //alert("Spin again!");
         //console.log("workkk");
       console.log(spaces[randomNum])
-
   /*----------------------switching players-------------------------*/
-    if (playerOneTurn) {
-        currentPlayer = '#player1'
-        playerOneTurn = false
-      console.log("player1 moves")
+        // if (playerOneTurn) {
+        //     currentPlayer = '#player1'
+        //     playerOneTurn = false
+        //   console.log("player1 moves")
+        // }
+        // else {
+        //     currentPlayer = '#player2'
+        //     playerOneTurn = true
+        //   console.log("player2 moves")
+        // }//calling function to move players
+        //   // movePlayer(currentPlayer, randomNum)
     }
-    else {
-        currentPlayer = '#player2'
-        playerOneTurn = true
-      console.log("player2 moves")
-    }//calling function to move players
-      // movePlayer(currentPlayer, randomNum)
-}
-spinDial.addEventListener("click", getRandom)
-
-var $plyPosition
-
+    spinDial.addEventListener("click", getRandom)
 
   /*-------------------moving number of spaces------------------*/
 
   function movePlayer(who,randomNum){
-      if (current == player1) {
-        who.location += randomNum
-        $('#s'+who.location).append(who.$id)
-        alert(events['#s'+who.location].message)
+      who.location += randomNum
+      $('#s'+ who.location).append(who.$id) //which player -- will move 'how many' spaces from current spot
+      // alert(events['#s'+ who.location].message) //alert message when the player lands on the space
+      messageDiv.innerHTML = events['#s'+ who.location].message
+      current.money += events['#s' + who.location].money //current player's money will be deducted or added according to event triggered
+      console.log(current)
+
+      if (current === player1) { //if statement for switching players
+        console.log("player1 moves")
+        console.log(current.money)
+        $('#player1-score').text(current.money) //add-subtract money from the score
         current = player2
       }
       else {
-        who.location += randomNum
-        alert(events['#s'+who.location].message)
+        console.log("player2 moves")
+        $('#player2-score').text(current.money)
         current = player1
       }
-
+      console.log(events['#s' + who.location].money)
+    }
 
         // $plyPosition = $('.spaces').index($(who).parent())
         // console.log(plyPosition)
         // $('.spaces').eq(plyPosition + randomNum).append($(who))
-  }
 
 /*-------------------------tile events----------------------------*/
       //make object for each spaces
@@ -190,60 +194,6 @@ var $plyPosition
         money: +150000
       }
     }
-
-    // var total = 0
-    // function getSpot(currentPlayer) {
-    //   if(currentPlayer = 1) {
-    //
-    //   for (var i = 0; i < currentPlayer.length; i++) {
-    //     currentPlayer[i]
-    //     console.log("what number")
-    //   }
-    //   return total
-    //   }
-    // }
-
-  var player1Location = 0
-  var player2Location = 0
-  var current = player1
-
-  // function landOn() {
-  // roll dice & game play
-  // $('.spin').click(function(){
-  //   movePlayer(current, getRandom())
-  // })
-    //   if (current === player1) {
-    //       plyPosition += randomNum // keep track of the location of the players
-    //       alert(events[$plyPosition].message) // show what events would happen at that specified location
-    //       game.players[0].money += moneyScore //events.location.money += player1Money // events.location.money
-    //       current = player2
-    //   } else {
-    //       game.players[0].location += randomNum
-    //       alert(events.location.message)
-    //       game.players[1].money += moneyScore
-    //       current = player1
-    //   }
-    // })
-// }
-
-
-// events['#s1'].money
-// -25000
-// alert(events['#s9'].message)
-// undefined
-// function landing(location) {
-// alert(events[location].message)
-// console.log(events[location].money)
-// }
-
-
-
-
-
-
-
-
-
 
 
   /*-----------------------score-moneyCounter-----------------------------*/
