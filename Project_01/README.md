@@ -1,11 +1,11 @@
-----------------------------------
-## The Game of LIFE
+
+## The Game of Mediocre LIFE
 ----------------------------------
 
 ## Rules:
   - Not many rules...just keep clicking the spin button.
   - 2 players...so wait your turn.
-
+  
 ## How to win:
   - Whoever has the most amount of money by the end of the game wins.
 
