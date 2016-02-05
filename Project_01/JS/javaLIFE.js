@@ -61,7 +61,7 @@
   var spinDial = document.querySelector('.spin')
 
   function getRandom(min, max) {
-        randomNum = Math.floor(Math.random() * 3) + 1
+        randomNum = Math.floor(Math.random() * 2) + 1
         display.innerText = randomNum
         movePlayer(current, randomNum)
         //alert("Spin again!");
@@ -88,42 +88,48 @@
       who.location += randomNum
       $('#s'+ who.location).append(who.$id) //which player -- will move 'how many' spaces from current spot
       // alert(events['#s'+ who.location].message) //alert message when the player lands on the space
+      if(who.location < 21){
       messageDiv.innerHTML = events['#s'+ who.location].message
       current.money += events['#s' + who.location].money //current player's money will be deducted or added according to event triggered
       console.log(current)
-
+}
       if (current === player1) { //if statement for switching players
         console.log("player1 moves")
         console.log(current.money)
         $('#player1-score').text(current.money) //add-subtract money from the score
       getWinner()
+      rePosition()
         current = player2
       }
       else {
         console.log("player2 moves")
         $('#player2-score').text(current.money)
       getWinner()
+      rePosition()
         current = player1
       }
-      console.log(events['#s' + who.location].money)
+      // console.log(events['#s' + who.location].money)
     }
 
     function getWinner() {
-      // console.log(player1, player2)
-      // if (player1.location === 20 && player2.location !== 20)
-      //       document.getElementById('#player1').disabled = true
-      if (player1.location > 20 && player2.location > 20)
+      if (player1.location > 20) {
+        player1.location = 20
+      }
+      else if(player2.location > 20){
+        player2.location = 20
+      }
+
       if (player1.location === 20 && player2.location === 20) {
 
           if (player1.money < player2.money) {
             console.log("player2 wins!")
             alert("Player 2 Wins!")
-            document.location.reload()
+            // document.location.reload()
           }
           else if (player1.money > player2.money) {
             console.log("player1 wins!")
             alert("Player 1 Wins!")
-            document.location.reload()
+            // document.location.reload()
           }
           else {
             console.log("It's a tie!")
@@ -132,6 +138,15 @@
         else {
           console.log("continue playing")
       }
+    }
+
+    function rePosition() {
+      if (player1.location > 20) {
+          player1.location === 20
+        }
+          else if (player2.location > 20){
+            player2.location === 20
+        }
     }
 
 
@@ -222,6 +237,10 @@
       '#s20': {
         message: "Retirement plan finally kicks in..assuming you are the average American...and with a pension.  +$150,000",
         money: +150000
+      },
+      '#s21': {
+        message: "dfghjkl",
+        money: 0
       }
     }
 
