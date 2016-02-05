@@ -48,7 +48,6 @@ body {
 
 h1 {
   font-family: Phosphate-solid;
-<<<<<<< HEAD
   font-size: 35px;
   letter-spacing: 2px;
   line-height: 20px;
@@ -71,43 +70,6 @@ h1 {
   font-size: 40px;
 }
 
-=======
-<<<<<<< HEAD
-  letter-spacing: 2px;
-  line-height: 20px;
-  margin-left: 30px;
-}
-
-.fancy {
-  font-family: Porter;
-  font-weight: bolder;
-  font-size: 45px;
-  letter-spacing: 5px;
-=======
-  font-size: 35px;
-  letter-spacing: 2px;
-  line-height: 20px;
-  margin-left: 245px;
-  /*color: #25A599;*/
-}
-
-.fancy {
-  color: #FF6F42;
-  font-family: Porter;
-  font-weight: bolder;
-  font-size: 50px;
-  letter-spacing: 7px;
-  word-spacing: 10px;
-}
-
-#dollar {
-  letter-spacing: 2px;
-  font-family: Phosphate-solid;
-  font-size: 40px;
->>>>>>> master
-}
-
->>>>>>> gh-pages
 #player1-score {
   font-family: Phosphate-solid;
   font-size: 30px;
@@ -115,7 +77,6 @@ h1 {
 }
 
 #player2-score {
-<<<<<<< HEAD
   font-family: Phosphate-solid;
   font-size: 30px;
   margin: 80px 65px 0px;
@@ -163,55 +124,6 @@ h1 {
   text-align: center;
 }
 
-=======
-  font-family: Phosphate-solid;
-  font-size: 30px;
-  margin: 80px 65px 0px;
-}
-
-#player1-display {
-  width: 170px;
-  height: 56px;
-  border: 7px inset #25A599;
-  font-family: Phosphate-solid;
-  font-size: 40px;
-  letter-spacing: 3px;
-  position: absolute;
-  margin: -50px 30px;
-  padding-left: 10px
-}
-
-#player2-display {
-  width: 170px;
-  height: 56px;
-  border: 7px inset #25A599;
-  font-family: Phosphate-solid;
-  font-size: 40px;
-  letter-spacing: 3px;
-  position: absolute;
-  margin: -50px 30px;
-  padding-left: 10px;
-}
-
-.messageCenter {
-  font-family: Phosphate-solid;
-  font-size: 30px;
-  line-height: 35px;
-  margin-left: 1335px;
-  margin-top: -250px;
-}
-
-#message {
-  font-family: Madeline;
-  font-weight: bold;
-  font-size: 40px;
-  margin-left: 1380px;
-  margin-top: 100px;
-  display: table-caption;;
-  text-align: center;
-}
-
->>>>>>> gh-pages
 #container {
     width: 250px;
     height: 590px;
@@ -232,22 +144,10 @@ h1 {
 
 #start {
   /*border: 5px solid grey;*/
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  background-color: transparent;
-  bottom: 230px;
-  left: 172px;
-=======
->>>>>>> gh-pages
   border-radius: 80px;
   background-color: transparent;
   bottom: 230px;
   left: 340px;
-<<<<<<< HEAD
-=======
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -258,15 +158,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 135px;
-<<<<<<< HEAD
   left: 425px;
-=======
-<<<<<<< HEAD
-  left: 257px;
-=======
-  left: 425px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -275,18 +167,8 @@ h1 {
   /*border: 5px solid grey;*/
   border-radius: 80px;
   background-color: transparent;
-<<<<<<< HEAD
   bottom: 190px;
   left: 545px;
-=======
-<<<<<<< HEAD
-  bottom: 195px;
-  left: 368px;
-=======
-  bottom: 190px;
-  left: 545px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -296,15 +178,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 330px;
-<<<<<<< HEAD
   left: 545px;
-=======
-<<<<<<< HEAD
-  left: 377px;
-=======
-  left: 545px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -314,15 +188,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 472px;
-<<<<<<< HEAD
   left: 545px;
-=======
-<<<<<<< HEAD
-  left: 377px;
-=======
-  left: 545px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -333,15 +199,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 610px;
-<<<<<<< HEAD
   left: 518px;
-=======
-<<<<<<< HEAD
-  left: 350px;
-=======
-  left: 518px;
->>>>>>> master
->>>>>>> gh-pages
   width: 30px;
   height: 30px;
   position: absolute;
@@ -352,15 +210,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 638px;
-<<<<<<< HEAD
   left: 612px;
-=======
-<<<<<<< HEAD
-  left: 444px;
-=======
-  left: 612px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -371,15 +221,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 552px;
-<<<<<<< HEAD
   left: 688px;
-=======
-<<<<<<< HEAD
-  left: 520px;
-=======
-  left: 688px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -390,15 +232,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 430px;
-<<<<<<< HEAD
   left: 703px;
-=======
-<<<<<<< HEAD
-  left: 535px;
-=======
-  left: 703px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -409,15 +243,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 315px;
-<<<<<<< HEAD
   left: 730px;
-=======
-<<<<<<< HEAD
-  left: 562px;
-=======
-  left: 730px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -427,18 +253,8 @@ h1 {
   /*border: 5px solid grey;*/
   border-radius: 80px;
   background-color: transparent;
-<<<<<<< HEAD
   bottom: 188px;
   left: 733px;
-=======
-<<<<<<< HEAD
-  bottom: 208px;
-  left: 565px;
-=======
-  bottom: 188px;
-  left: 733px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -449,15 +265,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 145px;
-<<<<<<< HEAD
   left: 810px;
-=======
-<<<<<<< HEAD
-  left: 642px;
-=======
-  left: 810px;
->>>>>>> master
->>>>>>> gh-pages
   width: 40px;
   height: 40px;
   position: absolute;
@@ -468,15 +276,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 233px;
-<<<<<<< HEAD
   left: 858px;
-=======
-<<<<<<< HEAD
-  left: 690px;
-=======
-  left: 858px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -487,15 +287,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 370px;
-<<<<<<< HEAD
   left: 893px;
-=======
-<<<<<<< HEAD
-  left: 725px;
-=======
-  left: 893px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -505,18 +297,8 @@ h1 {
   /*border: 5px solid grey;*/
   border-radius: 80px;
   background-color: transparent;
-<<<<<<< HEAD
   bottom: 315px;
   left: 980px;
-=======
-<<<<<<< HEAD
-  bottom: 320px;
-  left: 805px;
-=======
-  bottom: 315px;
-  left: 980px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -526,18 +308,8 @@ h1 {
   /*border: 5px solid grey;*/
   border-radius: 80px;
   background-color: transparent;
-<<<<<<< HEAD
   bottom: 198px;
   left: 990px;
-=======
-<<<<<<< HEAD
-  bottom: 210px;
-  left: 810px;
-=======
-  bottom: 198px;
-  left: 990px;
->>>>>>> master
->>>>>>> gh-pages
   width: 40px;
   height: 40px;
   position: absolute;
@@ -548,15 +320,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 150px;
-<<<<<<< HEAD
   left: 1058px;
-=======
-<<<<<<< HEAD
-  left: 880px;
-=======
-  left: 1058px;
->>>>>>> master
->>>>>>> gh-pages
   width: 40px;
   height: 40px;
   position: absolute;
@@ -566,18 +330,8 @@ h1 {
   /*border: 5px solid grey;*/
   border-radius: 80px;
   background-color: transparent;
-<<<<<<< HEAD
   bottom: 215px;
   left: 1120px;
-=======
-<<<<<<< HEAD
-  bottom: 225px;
-  left: 940px;
-=======
-  bottom: 215px;
-  left: 1120px;
->>>>>>> master
->>>>>>> gh-pages
   width: 30px;
   height: 30px;
   position: absolute;
@@ -588,15 +342,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 301px;
-<<<<<<< HEAD
   left: 1110px;
-=======
-<<<<<<< HEAD
-  left: 942px;
-=======
-  left: 1110px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -607,15 +353,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 425px;
-<<<<<<< HEAD
   left: 1136px;
-=======
-<<<<<<< HEAD
-  left: 968px;
-=======
-  left: 1136px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -626,15 +364,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 560px;
-<<<<<<< HEAD
   left: 1138px;
-=======
-<<<<<<< HEAD
-  left: 970px;
-=======
-  left: 1138px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
@@ -645,15 +375,7 @@ h1 {
   border-radius: 80px;
   background-color: transparent;
   bottom: 552px;
-<<<<<<< HEAD
   left: 1188px;
-=======
-<<<<<<< HEAD
-  left: 1020px;
-=======
-  left: 1188px;
->>>>>>> master
->>>>>>> gh-pages
   width: 50px;
   height: 50px;
   position: absolute;
