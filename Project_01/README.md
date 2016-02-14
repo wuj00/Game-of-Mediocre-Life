@@ -21,7 +21,7 @@
 -----------------------------------------  
 ### Wireframe:
 
-![image](https://github.com/wuj00/the-game-of-mediocre-life/blob/master/Project_01/CSS/IMG/Wireframe.jpg?raw=true)
+![image](https://github.com/wuj00/the-game-of-mediocre-life/blob/master/Project_01/CSS/IMG/Wireframe.png?raw=true)
 
 
 ------------------------------------------
