@@ -1,0 +1,7 @@
+<h1>Events#show</h1>
+<p>Find me in app/views/events/show.html.erb</p>
+
+<h1><%= @event.title %></h1>
+<h4>By: <%=link_to @event.user.username, user_path(@event.user) %></h4>
+<p><%= @event.address %></p>
+<hr>
