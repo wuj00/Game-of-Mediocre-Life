@@ -1,13 +1,17 @@
 <h1>Welcome, <%= @user.username %>!</h1>
+<h3><%= @user.email %></h3>
 
-
+<br>
+<div class="container">
 <% @user.events.each do |u| %>
   <p><%= u.name %></p>
   <p><%= u.url %></p>
+<hr>
 <% end %>
+</div>
 
 
-<div class="text-center" style="display:block;">
+<div class="text-center" style="display:block">
   <div class="row">
     <div class="col-xs-12 col-md-10">
       <div class="btn-group">
@@ -17,7 +21,7 @@
         <%= link_to 'Edit an event', events_edit_path, class: "btn btn-primary" %>
       </div>
       <div class="btn-group">
-        <%= link_to 'Delete an event', events_destroy_path, method: :delete, class: "btn btn-primary" %>
+        <%= link_to 'Delete an event', events_destroy_path, method: :delete, class: "btn btn-danger" %>
       </div>
     </div>
   </div>

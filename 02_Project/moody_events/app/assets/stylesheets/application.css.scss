@@ -17,3 +17,25 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+$primaryColor: #edf2f8;
+$standardMargin: 30px;
+
+body {
+  background-color: $primaryColor!important;
+}
+
+img {
+  border: 5px solid #FFF;
+  padding: 5px;
+  background-color: $primaryColor!important;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: $standardMargin * 2;
+  span{
+    color: blue;
+  }
+}

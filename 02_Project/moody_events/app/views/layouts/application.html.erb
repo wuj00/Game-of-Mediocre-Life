@@ -30,7 +30,7 @@
 </head>
 <body>
   <% if logged_in? %>
-    <%= link_to 'Logout', logout_path %>
+    <p>Logged in as <strong><%= current_user.username %></strong></p><%= link_to 'Logout', logout_path %>
   <% else %>
     <%= link_to 'Login', new_session_path %>
   <% end %>

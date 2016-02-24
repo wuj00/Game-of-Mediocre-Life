@@ -3,7 +3,9 @@
 
 <h1><%= @event.name %></h1>
 <h4><%= @event.url %></h4>
-<p>By: <%=link_to @event.user.username, user_path(@event.user) %></p>
+<p>By: <%= link_to @event.user.username, user_path(@event.user) %></p>
+
 <hr>
 
+<%= link_to 'Delete an event', events_destroy_path, method: :delete, class: "btn btn-danger" %>
 <%= link_to 'Back to events', events_path, class: 'btn btn-info' %>
