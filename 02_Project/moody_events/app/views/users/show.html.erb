@@ -8,9 +8,9 @@
 
 <div class="text-center" style="display:block;">
   <div class="row">
-    <div class="col-xs-12 col-md-3">
+    <div class="col-xs-12 col-md-10">
       <div class="btn-group">
-        <%= link_to 'Edit Profile', users_edit_path, class: "btn btn-primary" %>
+        <%= link_to 'Add an event', events_new_path, class: "btn btn-primary" %>
       </div>
       <div class="btn-group">
         <%= link_to 'Edit an event', events_edit_path, class: "btn btn-primary" %>
@@ -22,9 +22,15 @@
   </div>
   <br>
   <div class="row">
-    <div class="col-xs-12 col-md-3">
-      <div class="btn-group-vertical">
-          <%= link_to "HOW YOU FEELIN'?", user_path, class: "btn btn-lg btn-info" %>
+    <div class="col-xs-12 col-md-9">
+      <div class="container">
+        <%= link_to 'Edit Profile', users_edit_path, class: "btn btn-block btn-primary" %>
+    </div>
+  <br>
+  <div class="row">
+    <div class="col-xs-12 col-md-10">
+      <div class="container">
+          <%= link_to "HOW YOU FEELIN'?", user_path, class: "btn btn-block btn-info" %>
       </div>
     </div>
   </div>

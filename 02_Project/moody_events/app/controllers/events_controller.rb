@@ -10,9 +10,11 @@ class EventsController < ApplicationController
   end
 
   def new
+    @event = Event.new
   end
 
   def create
+    @event = Event.new(event_params)
   end
 
   def edit
@@ -22,5 +24,11 @@ class EventsController < ApplicationController
   end
 
   def destroy
+  end
+end
+
+private
+  def event_params
+    params.require(:event).permit(:name, :url)
   end
 end

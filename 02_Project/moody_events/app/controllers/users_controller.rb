@@ -17,8 +17,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      session[:user_id] = @user.id
+      flash[:success] = "Glad you could join us #{@user.username}!"
       redirect_to users_path
     else
+      flash[:failure] = "Oops, something went wrong. Try again."
       redirect_to users_new_path
     end
   end
