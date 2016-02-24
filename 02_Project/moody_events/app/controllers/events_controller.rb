@@ -15,6 +15,11 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(event_params)
+    if @event.save
+      redirect_to events_path
+    else
+      redirect_to events_new_path
+    end
   end
 
   def edit
@@ -25,7 +30,6 @@ class EventsController < ApplicationController
 
   def destroy
   end
-end
 
 private
   def event_params

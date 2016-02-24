@@ -1,17 +1,21 @@
 <h1>Events#new</h1>
 <p>Find me in app/views/events/new.html.erb</p>
 
-<%= form_for(@user, :html => {:class => 'form-signup'}) do |f| %>
-    <h2 class="form-signin-heading">Sign Up</h2>
+<div class="container">
 
-    <%= f.label :username %>
-    <%= f.text_field :username %>
+<%= form_for(@event) do |e| %>
+      <h2 class="form header">Add an event!</h2>
+
+    <%= e.label :name %>
+    <%= e.text_field :name %>
 		<br>
-    <%= f.label :email %>
-    <%= f.text_field :email %>
+    <%= e.label :url %>
+    <%= e.text_field :url %>
+
+    <!-- add mood -->
 
   <div class="text-centered">
-    <%= f.submit "Add event", class: "btn btn-large btn-info" %>
+    <%= e.submit "Add event", class: "btn btn-large btn-info" %>
     <%= link_to "Cancel", events_path, class: 'btn btn-primary' %>
 	</div>
 </div>
