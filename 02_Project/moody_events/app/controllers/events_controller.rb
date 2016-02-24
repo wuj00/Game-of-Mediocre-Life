@@ -2,7 +2,12 @@ class EventsController < ApplicationController
 
   def index
     @events = Event.all
-
+    @events = Event.search(params[:search])
+     if params[:search]
+      @events = Event.search(params[:search]).order("created_at DESC")
+    else
+      @events = Event.order("created_at DESC")
+    end
   end
 
   def show
@@ -24,15 +29,20 @@ class EventsController < ApplicationController
   end
 
   def edit
+    @event = Event.find(params[:id])
   end
 
   def update
+    @event = Event.find(params[:id])
+    if @event.update_attributes(event_params)
+      redirect_to user_path @event
+    end
   end
 
   def destroy
     @event = Event.find(params[:id])
     if @event.destroy
-      redirect_to events_path
+      redirect_to event_path @event
     end
   end
 

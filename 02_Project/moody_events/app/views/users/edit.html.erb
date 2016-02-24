@@ -9,7 +9,7 @@
 	<%= f.text_field :email %>
 	<%= f.label :password %>
 	<%= f.password_field :password %>
-  <%= f.submit %>
+  <%= f.submit "Update Profile", class: "btn btn-large btn-info" %>
 <% end %>
 
 <%= link_to 'Cancel', user_path %>

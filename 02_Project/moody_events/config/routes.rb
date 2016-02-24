@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
 
+  get 'moods/index'
+
+  get 'moods/new'
+
+  get 'moods/create'
+
+  get 'moods/show'
+
+  get 'moods/edit'
+
+  get 'moods/update'
+
+  get 'moods/destroy'
+
 #user routes
   root 'users#index'
   get '/users' => 'users#index', as: :users
