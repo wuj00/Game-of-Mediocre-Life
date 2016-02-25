@@ -19,23 +19,35 @@
 @import "bootstrap";
 
 
-$primaryColor: #edf2f8;
+$primaryColor: #5BC0DE; //#edf2f8; --> light blue grey
+$secondaryColor: #8C8C8C;
 $standardMargin: 30px;
 
 body {
-  background-color: $primaryColor!important;
+    font-family: Moon;
+    color: $primaryColor;
+    text-align: center;
 }
 
 img {
-  border: 5px solid #FFF;
+  border: 8px solid $secondaryColor;
+  border-radius: 200px;
   padding: 5px;
-  background-color: $primaryColor!important;
+}
+
+.btn{
+ color: white;
 }
 
 h1 {
-  font-size: 64px;
-  margin-bottom: $standardMargin * 2;
-  span{
-    color: blue;
-  }
+   font-size: 64px;
+   margin-bottom: $standardMargin;
+   text-align: center;
+}
+
+h3 {
+ font-size: 30px;
+ font-weight: medium;
+ margin-bottom: $standardMargin * 2;
+ text-align: center;
 }

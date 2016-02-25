@@ -3,10 +3,12 @@
 
 
 <% @moods.each do |m| %>
-  <h3><%= m.name %></h3><%= image_tag(m.image) %>
-  <hr>
+  <h3><%= m.name %><br><br><%= link_to (image_tag(m.image)), mood_path(m) %></h3>
 <% end %>
 
+<br>
+<br>
+<br>
 
 <div class="container">
   <%= link_to 'Create an account', users_new_path, class: 'btn btn-info' %>
