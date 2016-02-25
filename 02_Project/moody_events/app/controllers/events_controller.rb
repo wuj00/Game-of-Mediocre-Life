@@ -1,5 +1,7 @@
 class EventsController < ApplicationController
 
+# before_action :authorize, only: [:index, :show]
+
   def index
     @events = Event.all
     @events = Event.search(params[:search])
@@ -41,9 +43,8 @@ class EventsController < ApplicationController
 
   def destroy
     @event = Event.find(params[:id])
-    if @event.destroy
-      redirect_to event_path @event
-    end
+    @event.destroy
+      redirect_to user_path @event
   end
 
 private

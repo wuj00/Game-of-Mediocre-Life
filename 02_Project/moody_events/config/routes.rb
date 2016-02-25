@@ -1,19 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'moods/index'
-
-  get 'moods/new'
-
-  get 'moods/create'
-
-  get 'moods/show'
-
-  get 'moods/edit'
-
-  get 'moods/update'
-
-  get 'moods/destroy'
-
 #user routes
   root 'users#index'
   get '/users' => 'users#index', as: :users
@@ -34,7 +20,10 @@ Rails.application.routes.draw do
   delete 'events/:id' => 'events#destroy', as: :events_destroy
 
 #mood routes
+  get 'moods' => 'moods#index', as: :moods
+  get 'moods/:id' => 'moods#show', as: :mood
 
+  # match '/moods/:id/events/new' => 'mood#show', as: :mood
 
 
 #session routes

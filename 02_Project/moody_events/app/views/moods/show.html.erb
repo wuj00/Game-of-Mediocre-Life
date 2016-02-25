@@ -1,2 +1,16 @@
 <h1>Moods#show</h1>
 <p>Find me in app/views/moods/show.html.erb</p>
+
+<div class="container">
+<% @mood.events.each do |m| %>
+  <p><%= m.name %></p>
+<hr>
+<% end %>
+</div>
+
+
+
+<div class="container">
+  <%= link_to 'Add an event', events_new_path, class: 'btn btn-success' %>
+  <%= link_to 'Create an account', users_new_path, class: 'btn btn-info' %>
+</div>
