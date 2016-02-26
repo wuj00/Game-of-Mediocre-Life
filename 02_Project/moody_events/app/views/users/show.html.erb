@@ -4,8 +4,8 @@
 <br>
 <div class="container">
 <% @user.events.each do |u| %>
-  <p><%= u.name %></p>
-  <p><%= u.url %></p>
+  <font size="5"><strong><%= link_to u.name, event_path(u) %></strong></font>
+  <p><%= u.@mood.image %></p>
 
     <div class="btn-group">
       <%= link_to 'Edit an event', events_edit_path(u), class: "btn btn-primary" %>
@@ -13,32 +13,19 @@
     <div class="btn-group">
       <%= link_to 'Delete an event', events_destroy_path(u), method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-danger" %>
     </div>
-
+  </div>
 <hr>
 <% end %>
-</div>
 
 
-<div class="text-center" style="display:block">
-  <div class="row">
-    <div class="col-xs-12 col-md-10">
-      <div class="btn-group">
-        <%= link_to 'Add an event', events_new_path, class: "btn btn-primary" %>
-      </div>
-    </div>
+<div class="container">
+  <div class="btn-group">
+    <%= link_to 'Add an event', events_new_path, class: "btn btn-primary" %>
   </div>
-  <br>
-  <div class="row">
-    <div class="col-xs-12 col-md-9">
-      <div class="container">
-        <%= link_to 'Edit Profile', users_edit_path, class: "btn btn-block btn-primary" %>
-    </div>
-  <br>
-  <div class="row">
-    <div class="col-xs-12 col-md-10">
-      <div class="container">
-          <%= link_to "HOW YOU FEELIN'?", moods_path, class: "btn btn-block btn-info" %>
-      </div>
-    </div>
+  <div class="btn-group">
+    <%= link_to 'Edit Profile', users_edit_path, class: "btn btn-primary" %>
+  </div>
+  <div class="btn-group">
+    <%= link_to "HOW YOU FEELIN'?", moods_path, class: "btn btn-large btn-info" %>
   </div>
 </div>

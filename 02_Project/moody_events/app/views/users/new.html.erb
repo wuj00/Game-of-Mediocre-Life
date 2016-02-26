@@ -2,45 +2,37 @@
 
 <div class="container">
 
-  <%= form_for(@user, :html => {:class => 'form-signup'}) do |f| %>
-      <h2 class="form-signin-heading"><strong>Sign Up</strong></h2>
+  <%= form_tag users_new_path, {:class => 'form-signup'} do |f| %>
+  	<div class="row"><legend class="col-md-4 col-md-offset-4">Sign Up</legend></div>
+      <fieldset>
 	    <div class="form-group">
-          <%= f.label :username %>
-        <div class="col-md-5">
-          <%= f.text_field :username %>
-        </div>
-      </dvi>
-			<br>
+	        <%= label_tag :username, 'Username', class: 'col-md-4 control-label' %>
+		    <div class="col-md-5">
+		        <%= text_field_tag :username, params[:username], class: 'form-control' %>
+		    </div>
+	    </div>
 	    <div class="form-group">
-          <%= f.label :email %>
-        <div class="col-md-5">
-          <%= f.text_field :email %>
-        </div>
-      </dvi>
-			<br>
+	        <%= label_tag :email, 'Email', class: 'col-md-4 control-label' %>
+		    <div class="col-md-5">
+		        <%= text_field_tag :email, params[:email], class: 'form-control' %>
+		    </div>
+	    </div>
 	    <div class="form-group">
-          <%= f.label :password %>
-        <div class="col-md-5">
-          <%= f.text_field :password %>
-        </div>
-      </dvi>
-			<br>
+	        <%= label_tag :password, 'Password', class: 'col-md-4 control-label' %>
+		    <div class="col-md-5">
+		        <%= text_field_tag :password, params[:password], class: 'form-control' %>
+		    </div>
+	    </div>
 	    <div class="form-group">
-          <%= f.label :password_confirmation %>
-        <div class="col-md-5">
-          <%= f.text_field :password_confirmation %>
-        </div>
-      </dvi>
-			<br>
-      <div class="text-centered">
-        <%= f.submit "Create my account", class: "btn btn-large btn-info" %>
-		    <%= link_to "Login", new_session_path, class: 'btn btn-success' %>
-			</div>
+	        <%= label_tag :password_confirmation, 'Password_confirmation', class: 'col-md-4 control-label' %>
+		    <div class="col-md-5">
+		        <%= text_field_tag :password_confirmation, params[:password_confirmation], class: 'form-control' %>
+		    </div>
+	    </div>
+    </fieldset>
+        <div class="button">
+          <%= submit_tag 'Create my account', class: 'btn btn-success' %>
+          <%= link_to "Login", new_session_path, class: 'btn btn-info' %>
+  	    </div>
+
   <% end %>
-
-</div>
-<%= link_to 'Cancel', users_path %>
-
-	    <div class="form-group">
-
-		  <div class="col-md-5">

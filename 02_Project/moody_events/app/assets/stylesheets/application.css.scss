@@ -19,24 +19,25 @@
 @import "bootstrap";
 
 
-$primaryColor: #5BC0DE; //#edf2f8; --> light blue grey
-$secondaryColor: #8C8C8C;
-$standardMargin: 30px;
+$textColor: #5BC0DE; //#edf2f8; --> light blue grey
+$lightGrey: #8C8C8C;
+$standardMargin: 20px;
 
 body {
     font-family: Moon;
-    color: $primaryColor;
+    color: $textColor;
     text-align: center;
 }
 
 img {
-  border: 8px solid $secondaryColor;
+  border: 8px solid $lightGrey;
   border-radius: 200px;
   padding: 5px;
 }
 
 .btn{
  color: white;
+ text-align: center;
 }
 
 h1 {
@@ -44,7 +45,7 @@ h1 {
   font-size: 64px;
   margin: $standardMargin;
   text-align: center;
-  //  border: 3px solid $secondaryColor;
+  //  border: 3px solid $lightGrey;
 }
 
 h3 {
@@ -52,4 +53,19 @@ h3 {
   font-weight: medium;
   margin-bottom: $standardMargin * 2;
   text-align: center;
+}
+
+.form-group {
+  text-align: right;
+  margin-bottom: $standardMargin
+}
+
+.col-md-5 {
+  text-align: right;
+  margin-bottom: $standardMargin
+}
+
+.col-md-4 col-md-offset-4 {
+  font-weight: bold;
+  color: $textColor;
 }
