@@ -16,5 +16,9 @@ class ApplicationController < ActionController::Base
       unless logged_in?
         redirect_to new_session_path
     end
+
+    def is_current_user?
+      
+    end
   end
 end

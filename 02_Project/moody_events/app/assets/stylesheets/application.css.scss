@@ -40,14 +40,16 @@ img {
 }
 
 h1 {
-   font-size: 64px;
-   margin-bottom: $standardMargin;
-   text-align: center;
+
+  font-size: 64px;
+  margin: $standardMargin;
+  text-align: center;
+  //  border: 3px solid $secondaryColor;
 }
 
 h3 {
- font-size: 30px;
- font-weight: medium;
- margin-bottom: $standardMargin * 2;
- text-align: center;
+  font-size: 30px;
+  font-weight: medium;
+  margin-bottom: $standardMargin * 2;
+  text-align: center;
 }

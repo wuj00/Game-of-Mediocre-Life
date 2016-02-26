@@ -1,22 +1,36 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1><strong>MOODIMIZER</strong></h1>
 
 <div class="container">
 
   <%= form_for(@user, :html => {:class => 'form-signup'}) do |f| %>
-      <h2 class="form-signin-heading">Sign Up</h2>
-
-      <%= f.label :username %>
-      <%= f.text_field :username %>
+      <h2 class="form-signin-heading"><strong>Sign Up</strong></h2>
+	    <div class="form-group">
+          <%= f.label :username %>
+        <div class="col-md-5">
+          <%= f.text_field :username %>
+        </div>
+      </dvi>
 			<br>
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+	    <div class="form-group">
+          <%= f.label :email %>
+        <div class="col-md-5">
+          <%= f.text_field :email %>
+        </div>
+      </dvi>
 			<br>
-      <%= f.label :password %>
-      <%= f.password_field :password %>
+	    <div class="form-group">
+          <%= f.label :password %>
+        <div class="col-md-5">
+          <%= f.text_field :password %>
+        </div>
+      </dvi>
 			<br>
-      <%= f.label :password_confirmation, "Password Confirm" %>
-      <%= f.password_field :password_confirmation %>
+	    <div class="form-group">
+          <%= f.label :password_confirmation %>
+        <div class="col-md-5">
+          <%= f.text_field :password_confirmation %>
+        </div>
+      </dvi>
 			<br>
       <div class="text-centered">
         <%= f.submit "Create my account", class: "btn btn-large btn-info" %>
@@ -26,3 +40,7 @@
 
 </div>
 <%= link_to 'Cancel', users_path %>
+
+	    <div class="form-group">
+
+		  <div class="col-md-5">

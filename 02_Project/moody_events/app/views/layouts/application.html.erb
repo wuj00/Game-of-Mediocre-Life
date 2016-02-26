@@ -28,9 +28,9 @@
   </header> -->
 
 </head>
-<body>
+<body data-no-turbolink="no">
   <% if logged_in? %>
-    <p>Logged in as <strong><%= current_user.username %></strong></p><%= link_to 'Logout', logout_path %>
+    <p>Logged in as <strong><%= link_to current_user.username, user_path(current_user) %></strong></p><%= link_to 'Logout', logout_path %>
   <% else %>
     <%= link_to 'Login', new_session_path %>
   <% end %>
@@ -44,7 +44,9 @@
     $('.alert').delay(2000).slideUp()
   </script>
 
-<%= yield %>
+<div class="container">
+  <%= yield %>
+</div>
 
 </body>
 </html>

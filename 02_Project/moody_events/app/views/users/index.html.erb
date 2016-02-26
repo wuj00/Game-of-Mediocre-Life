@@ -3,7 +3,7 @@
 
 <% @users.each do |u| %>
   <h2><%= link_to u.username, user_path(u) %></h2>
-  <h3>Number of contributed events <%= u.events.count %></h3>
+  <p>Number of contributed events: <%= u.events.count %></p>
   <hr>
 <% end %>
 

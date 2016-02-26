@@ -28,7 +28,13 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.find(params[:id])
+    # puts "current_user.id: #{current_user.id.class}"
+    # puts "params[:id]: #{params[:id].class}"
+    if current_user.id.to_s == params[:id]
+      @user = User.find(params[:id])
+    else
+      redirect_to user_path @user
+    end
     # @user.event.build
   end
 
@@ -40,9 +46,12 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user = User.find(params[:id])
-    if @user.destroy
-      redirect_to users_path
+    if current_user.id.to_s == params[:id]
+      @user = User.find(params[:id])
+    elsif
+      @user.destroy
+    else
+      redirect_to user_path @user
     end
   end
 

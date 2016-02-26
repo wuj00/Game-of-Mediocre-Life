@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
 #user routes
-  root 'users#index'
   get '/users' => 'users#index', as: :users
   get '/users/new' => 'users#new', as: :users_new
   post '/users' => 'users#create'
@@ -20,6 +19,7 @@ Rails.application.routes.draw do
   delete 'events/:id' => 'events#destroy', as: :events_destroy
 
 #mood routes
+  root 'moods#index'
   get 'moods' => 'moods#index', as: :moods
   get 'moods/:id' => 'moods#show', as: :mood
 

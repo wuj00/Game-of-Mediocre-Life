@@ -32,6 +32,7 @@ class EventsController < ApplicationController
 
   def edit
     @event = Event.find(params[:id])
+    # if current_user.id == @event.user.id
   end
 
   def update

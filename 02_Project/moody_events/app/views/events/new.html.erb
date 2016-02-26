@@ -1,9 +1,8 @@
-<h1>Events#new</h1>
+<p>Events#new</p>
 
 <div class="container">
-
 <%= form_for(@event) do |e| %>
-      <h2 class="form header"><strong>Add an event!</strong></h2>
+      <h1 class="form header"><strong>Add an event!</strong></h1>
 
     <%= e.label :name %>
     <br>
@@ -18,15 +17,15 @@
     <%= e.text_field :mood %>
 
     <!-- add mood -->
+</div>
 
 
 <br>
 <br>
 
-  <div class="container">
-    <%= e.submit "Add event", class: "btn btn-large btn-info" %>
-    <%= link_to "Cancel", moods_path, class: 'btn btn-primary' %>
-	</div>
+<div class="container">
+  <%= e.submit "Add event", class: "btn btn-large btn-info" %>
+  <%= link_to "Cancel", moods_path, class: 'btn btn-primary' %>
 </div>
 
 <% end %>
