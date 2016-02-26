@@ -47,14 +47,14 @@ class EventsController < ApplicationController
   def update
     @event = Event.find(params[:id])
     if @event.update_attributes(event_params)
-      redirect_to user_path @event
+      redirect_to current_user
     end
   end
 
   def destroy
     @event = Event.find(params[:id])
     @event.destroy
-      redirect_to user_path @event
+      redirect_to current_user
   end
 
 private
