@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 
-# before_action :authorize
+# before_action :authorize, only
+# :authorize, only:[:edit,:update, :destroy]
 
   def index
     @users = User.all
@@ -8,6 +9,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    
   end
 
   def new
@@ -30,10 +32,15 @@ class UsersController < ApplicationController
   def edit
     # puts "current_user.id: #{current_user.id.class}"
     # puts "params[:id]: #{params[:id].class}"
-    if current_user.id.to_s == params[:id]
-      @user = User.find(params[:id])
+    # if current_user.id.to_s == params[:id]
+    #   @user = User.find(params[:id])
+    # else
+    #   redirect_to root_path
+    # end
+    if current_user.id.to_s != params[:id]
+      redirect_to user_path
     else
-      redirect_to user_path @user
+      @user = User.find(params[:id])
     end
     # @user.event.build
   end
@@ -51,7 +58,7 @@ class UsersController < ApplicationController
     elsif
       @user.destroy
     else
-      redirect_to user_path @user
+      redirect_to users_path
     end
   end
 

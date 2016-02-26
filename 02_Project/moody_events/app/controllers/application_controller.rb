@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
     end
 
     def logged_in?
-    !current_user.nil?
+      !!current_user
     end
 
     def authorize
@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
     end
 
     def is_current_user?
-      
+
     end
   end
 end

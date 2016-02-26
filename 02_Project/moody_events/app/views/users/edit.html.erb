@@ -9,7 +9,13 @@
 	<%= f.text_field :email %>
 	<%= f.label :password %>
 	<%= f.password_field :password %>
-  <%= f.submit "Update Profile", class: "btn btn-large btn-info" %>
+
+  	<%= f.submit "Update Profile", class: "btn btn-large btn-info" %>
+
 <% end %>
 
+<br>
+<% if current_user.id.to_s == params[:id] %>
+	<%= link_to 'Delete Profile', root_path, method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-danger" %>
+<% end %>
 <%= link_to 'Cancel', user_path %>

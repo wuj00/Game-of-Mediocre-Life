@@ -4,16 +4,18 @@ class EventsController < ApplicationController
 
   def index
     @events = Event.all
-    @events = Event.search(params[:search])
-     if params[:search]
-      @events = Event.search(params[:search]).order("created_at DESC")
-    else
-      @events = Event.order("created_at DESC")
-    end
+
+    # @events = Event.search(params[:search])
+    #  if params[:search]
+    #   @events = Event.search(params[:search]).order("created_at DESC")
+    # else
+    #   @events = Event.order("created_at DESC")
+    # end
   end
 
   def show
-    @event = Event.find(params[:id])
+    @events = Event.find(params[:id])
+
     # @user = User.find(params[:id])
   end
 
@@ -32,7 +34,12 @@ class EventsController < ApplicationController
 
   def edit
     @event = Event.find(params[:id])
-    # if current_user.id == @event.user.id
+
+  #   if current_user.id == @event.user_id
+  #     @event = Event.find(params[:id])
+  #   else
+  #     redirect_to user_path @user
+  # end
   end
 
   def update
