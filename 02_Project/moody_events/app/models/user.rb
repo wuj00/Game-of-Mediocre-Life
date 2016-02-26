@@ -3,4 +3,6 @@ class User < ActiveRecord::Base
   has_many :events, dependent: :destroy
   accepts_nested_attributes_for :events
 
+  validates :user_id, presence: true
+  
 end

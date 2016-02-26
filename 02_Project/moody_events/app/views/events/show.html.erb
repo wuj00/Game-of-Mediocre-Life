@@ -1,7 +1,7 @@
 <h3>Events#show</h3>
 
   <h1><strong><%= @events.name %></strong></h1>
-  <h4><%= link_to @events.url, "#{@events.url}" %></h4>
+  <h4><%= link_to @events.url, "http://#{@events.url}" %></h4>
   <p>Posted by: <%= link_to @events.user.username, user_path(@events.user) %></p>
 
 <hr>

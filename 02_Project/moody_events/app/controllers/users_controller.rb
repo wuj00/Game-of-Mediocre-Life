@@ -42,6 +42,7 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
     # end
     # @user.event.build
+
   end
 
   def update
