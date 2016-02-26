@@ -30,8 +30,7 @@
 </head>
 <body data-no-turbolink="no">
   <% if logged_in? %>
-    <p>Logged in as <strong><%= link_to current_user.username, user_path(current_user) %></strong></p>
-    <%= link_to 'Logout', logout_path %>
+    <p>Logged in as <strong><%= link_to current_user.username, user_path(current_user) %></strong></p><%= link_to 'Logout', logout_path %>
   <% else %>
     <%= link_to 'Login', new_session_path %>
   <% end %>

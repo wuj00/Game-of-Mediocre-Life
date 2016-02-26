@@ -1,0 +1,18 @@
+<h1>Moods#show</h1>
+<h3><%= image_tag(@mood.image) %><br><br><%= @mood.name %></h3>
+
+
+<div class="container">
+<% @mood.events.each do |m| %>
+  <strong><%= m.name %></strong>
+  <p><%= m.url %></p>
+<% end %>
+</div>
+<hr>
+
+
+
+<div class="container">
+  <%= link_to 'Add an event', events_new_path, class: 'btn btn-success' %>
+  <%= link_to 'Back to Moods', moods_path, class: 'btn btn-info' %>
+</div>

@@ -1,0 +1,38 @@
+<h1>Welcome, <%= @user.username %>!</h1>
+<h3><%= @user.email %></h3>
+
+<br>
+<div class="container">
+<% @user.events.each do |u| %>
+  <font size="5"><strong><%= link_to u.name, event_path(u) %></strong></font>
+  <p><%= u.mood_id %></p>
+
+<% if current_user.id.to_s == params[:id] %>
+    <div class="btn-group">
+
+        <%= link_to 'Edit an event', events_edit_path(u), class: "btn btn-primary" %>
+
+    </div>
+    <div class="btn-group">
+      <%= link_to 'Delete an event', events_destroy_path(u), method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-danger" %>
+    </div>
+  </div>
+<hr>
+<% end %>
+
+
+<div class="container">
+    <% if current_user.id.to_s == params[:id] %>
+  <div class="btn-group">
+    <%= link_to 'Add an event', events_new_path, class: "btn btn-primary" %>
+  </div>
+  <div class="btn-group">
+
+      <%= link_to 'Edit Profile', users_edit_path, class: "btn btn-primary" %>
+
+  </div>
+  <% end %>
+  <div class="btn-group">
+    <%= link_to "HOW YOU FEELIN'?", moods_path, class: "btn btn-large btn-info" %>
+  </div>
+</div>

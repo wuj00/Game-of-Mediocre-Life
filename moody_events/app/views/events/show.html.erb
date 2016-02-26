@@ -1,0 +1,11 @@
+<h3>Events#show</h3>
+
+<% @events.each do |e| %>
+  <h1><strong><%= e.name %></strong></h1>
+  <h4><%= link_to e.url, "#{e.url}" %></h4>
+  <p>Posted by: <%= link_to e.user.username, user_path(e.user) %></p>
+<% end %>
+
+<hr>
+
+<%= link_to 'Back to events', events_path, class: 'btn btn-info' %>

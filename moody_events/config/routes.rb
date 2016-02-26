@@ -20,8 +20,8 @@ Rails.application.routes.draw do
 
 #mood routes
   root 'moods#index'
-  get '/moods' => 'moods#index', as: :moods
-  get '/moods/:id' => 'moods#show', as: :mood
+  get 'moods' => 'moods#index', as: :moods
+  get 'moods/:id' => 'moods#show', as: :mood
 
   # match '/moods/:id/events/new' => 'mood#show', as: :mood
 

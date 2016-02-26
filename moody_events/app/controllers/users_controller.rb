@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
 
-# before_action :authorize, only
-# :authorize, only:[:edit,:update, :destroy]
+# before_action :authorize
 
   def index
     @users = User.all
@@ -13,7 +12,6 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    # @user.events.build
   end
 
   def create
@@ -21,7 +19,7 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       flash[:success] = "Glad you could join us #{@user.username}!"
-      redirect_to root_path
+      redirect_to users_path
     else
       flash[:failure] = "Oops, something went wrong. Try again."
       redirect_to users_new_path
@@ -29,19 +27,13 @@ class UsersController < ApplicationController
   end
 
   def edit
-    # if current_user.id.to_s == params[:id]
-    #   @user = User.find(params[:id])
-    # else
-    #   redirect_to root_path
-    # end
-
-
-    # if current_user.id.to_s == params[:id]
-    #   redirect_to user_path
-    # else
+    # puts "current_user.id: #{current_user.id.class}"
+    # puts "params[:id]: #{params[:id].class}"
+    if current_user.id.to_s == params[:id]
       @user = User.find(params[:id])
-    # end
-    # @user.event.build
+    else
+      redirect_to user_path @user
+    end
   end
 
   def update
@@ -52,11 +44,13 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    # if current_user.id.to_s == params[:id]
-      @user = User.find(params[:id]).destroy
-      flash[:success] = "User deleted"
-      redirect_to users_path @user
-    # end
+    if current_user.id.to_s == params[:id]
+      @user = User.find(params[:id])
+    elsif
+      @user.destroy
+    else
+      redirect_to user_path @user
+    end
   end
 
   private
