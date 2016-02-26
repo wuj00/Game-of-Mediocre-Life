@@ -21,10 +21,21 @@
 -----------------------------------------  
 ### Wireframe:
 
-![image](https://github.com/wuj00/the-game-of-mediocre-life/blob/master/Project_01/CSS/IMG/Wireframe.png?raw=true)
+#####1
+![image](https://github.com/wuj00/the-game-of-mediocre-life/blob/master/02_Project/moody_events/app/assets/images/Wireframe1.png?raw=true)
+#####2
+![image](https://github.com/wuj00/the-game-of-mediocre-life/blob/master/02_Project/moody_events/app/assets/images/Wireframe2.png?raw=true)
+#####3
+![image](https://github.com/wuj00/the-game-of-mediocre-life/blob/master/02_Project/moody_events/app/assets/images/Wireframe3.png?raw=true)
+#####4
+![image](https://github.com/wuj00/the-game-of-mediocre-life/blob/master/02_Project/moody_events/app/assets/images/Wireframe4.png?raw=true)
+#####5
+![image](https://github.com/wuj00/the-game-of-mediocre-life/blob/master/02_Project/moody_events/app/assets/images/Wireframe1.png?raw=true)
 
 
 ### ERDiagram:
+
+![image]()
 ------------------------------------------
 
 ### User Stories:
