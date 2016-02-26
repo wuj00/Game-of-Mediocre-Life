@@ -5,12 +5,12 @@ class EventsController < ApplicationController
   def index
     @events = Event.all
 
-    # @events = Event.search(params[:search])
-    #  if params[:search]
-    #   @events = Event.search(params[:search]).order("created_at DESC")
-    # else
-    #   @events = Event.order("created_at DESC")
-    # end
+    @events = Event.search(params[:search])
+    if params[:search]
+      @events = Event.search(params[:search]).order("created_at DESC")
+    else
+      @events = Event.order("created_at DESC")
+    end
   end
 
   def show

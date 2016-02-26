@@ -9,7 +9,7 @@ class Event < ActiveRecord::Base
   #
   def self.search(search)
     if search.present?
-      where('name LIKE ?', "%#{search}%")
+      where('name iLIKE ?', "%#{search}%")
     else
       where(true)
     end

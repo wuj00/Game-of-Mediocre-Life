@@ -1,14 +1,20 @@
-<h3>Moods#index</h3>
+<br>
+<br>
+<h1>Feelin'...</h1>
 
 
-<% @moods.each do |m| %>
-  <h3><br><%= link_to (image_tag(m.image)), mood_path(m) %><br><br><%= m.name %></h3>
-<% end %>
+<div class="container">
+  <% @moods.each do |m| %>
+    <h3><br><%= link_to (image_tag(m.image)), mood_path(m) %><br><br><%= m.name %></h3>
+  <% end %>
+</div>
+
 
 <br>
 <br>
 <br>
 
 <div class="container">
+  <%= link_to 'Check out all events!', events_path, class: 'btn btn-info' %>
   <%= link_to 'Create an account', users_new_path, class: 'btn btn-info' %>
 </div>

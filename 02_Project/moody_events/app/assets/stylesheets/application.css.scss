@@ -26,7 +26,7 @@ $standardMargin: 20px;
 body {
     font-family: Moon;
     color: $textColor;
-    text-align: center;
+    // text-align: center;
 }
 
 img {
@@ -46,13 +46,6 @@ h1 {
   margin: $standardMargin;
   text-align: center;
   //  border: 3px solid $lightGrey;
-}
-
-h3 {
-  font-size: 30px;
-  font-weight: medium;
-  margin-bottom: $standardMargin * 2;
-  text-align: center;
 }
 
 .form-group {
