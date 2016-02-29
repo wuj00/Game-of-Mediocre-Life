@@ -7,11 +7,26 @@ $lightGrey: #8C8C8C;
 $standardMargin: 20px;
 
 body {
-  margin: 50px;
+  // margin: 50px;
 }
 
+.entry {
+  text-align: left;
+}
 
 h3 {
   font-size: 30px;
-  font-weight: medium;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.input-append {
+  text-align: center;
+}
+
+.button-index {
+  text-align: center;
 }

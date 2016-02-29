@@ -35,9 +35,20 @@ img {
   padding: 5px;
 }
 
-.btn{
- color: white;
- text-align: center;
+.btn {
+  color: white;
+  background-color: $lightGrey;
+  text-align: center;
+}
+
+.btn-info {
+  color: white;
+  background-color: $textColor;
+  text-align: center;
+}
+
+a {
+  color: $textColor;
 }
 
 h1 {

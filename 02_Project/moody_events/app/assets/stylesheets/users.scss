@@ -5,3 +5,12 @@
 $textColor: #5BC0DE; //#edf2f8; --> light blue grey
 $lightGrey: #8C8C8C;
 $standardMargin: 20px;
+
+body {
+  text-align: center;
+}
+
+
+p {
+  color: $lightGrey;
+}

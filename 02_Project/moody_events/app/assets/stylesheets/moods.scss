@@ -5,3 +5,52 @@
 $textColor: #5BC0DE; //#edf2f8; --> light blue grey
 $lightGrey: #8C8C8C;
 $standardMargin: 20px;
+
+body {
+  // text-align: center;
+  font-size: 14;
+}
+
+.pagination-centered {
+  display: inline-block;
+  float: none;
+  margin: 0px 20px 0px 20px;
+}
+
+.eventBox {
+  margin-left: 500px;
+  margin-top: -300px;
+  text-align: left;
+}
+
+.moodnail {
+  display: inline-block;
+  text-align: center;
+  margin-left: 150px;
+  p {
+    font-size: 50px;
+    // font-weight: bold;
+  }
+}
+
+.button-show {
+  text-align: center;
+  margin-top: 300px;
+}
+
+.button-index {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: left;
+  font-size: 70px;
+}

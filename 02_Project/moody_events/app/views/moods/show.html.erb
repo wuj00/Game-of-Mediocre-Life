@@ -1,18 +1,27 @@
-<h1>Moods#show</h1>
-<h3><%= image_tag(@mood.image) %><br><br><%= @mood.name %></h3>
+<br>
+<br>
+<div class="moodnail">
+  <p><%= @mood.name %></p>
+  <p><%= image_tag(@mood.image) %></p>
+</div>
+
+<br>
+<br>
+<br>
 
 
-<div class="container">
+<div class="eventBox">
+<hr>
 <% @mood.events.each do |m| %>
-  <strong><%= m.name %></strong>
-  <p><%= m.url %></p>
+  <h4><strong><%= m.name %></strong></h4><p><%= link_to m.url, "http://#{m.url}" %></p>
+<hr>
 <% end %>
 </div>
-<hr>
 
 
 
-<div class="container">
+<div class="button-show">
+  <hr>
   <%= link_to 'Add an event', events_new_path, class: 'btn btn-success' %>
   <%= link_to 'Back to Moods', moods_path, class: 'btn btn-info' %>
 </div>
