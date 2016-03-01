@@ -18,15 +18,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
-$textColor: #5BC0DE; //#edf2f8; --> light blue grey
-$lightGrey: #8C8C8C;
+//#edf2f8; --> light blue grey
+$textColor: #5BC0DE; // --> turquoise color
+$lightGrey: #8C8C8C;// --> light grey
 $standardMargin: 20px;
 
 body {
     font-family: Moon;
     color: $textColor;
-    // text-align: center;
+    text-align: center;
+    // display: inline-block;
 }
 
 img {
@@ -59,17 +60,22 @@ h1 {
   //  border: 3px solid $lightGrey;
 }
 
-.form-group {
-  text-align: right;
-  margin-bottom: $standardMargin
-}
+// .form-group {
+//   text-align: right;
+//   margin-bottom: $standardMargin
+// }
 
-.col-md-5 {
-  text-align: right;
-  margin-bottom: $standardMargin
-}
+// .col-md-5 {
+//   text-align: right;
+//   margin-bottom: $standardMargin
+// }
+//
+// .col-md-4 col-md-offset-4 {
+//   font-weight: bold;
+//   color: $textColor;
+// }
 
-.col-md-4 col-md-offset-4 {
-  font-weight: bold;
-  color: $textColor;
+ul {
+    text-align: center;
+    list-style-position: inside;
 }

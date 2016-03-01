@@ -10,10 +10,10 @@
 <br>
 
 
-<div class="eventBox">
+<div class="eventsList">
 <hr>
 <% @mood.events.each do |m| %>
-  <h4><strong><%= m.name %></strong></h4><p><%= link_to m.url, "http://#{m.url}" %></p>
+  <h4><strong><%= link_to m.name, event_path(m) %></strong></h4>
 <hr>
 <% end %>
 </div>

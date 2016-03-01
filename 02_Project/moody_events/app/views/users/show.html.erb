@@ -8,10 +8,10 @@
 <br>
 <br>
 <% @user.events.each do |u| %>
-  <font size="5"><strong><%= link_to u.name, event_path(u) %></strong></font>
-  <br>
-  <font size="3"><%= link_to u.url, "http://#{u.url}" %></font>
-  <p><%= u.mood_id %></p>
+  <ul>
+    <li><font size="5"><strong><%= link_to u.name, event_path(u) %></strong></font></li>
+    <li><p><%= u.mood_id %></p></li>
+  </ul>
 <br>
 <br>
     <div class="btn-group">

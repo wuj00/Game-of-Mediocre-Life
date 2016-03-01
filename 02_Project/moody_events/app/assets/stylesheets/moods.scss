@@ -17,16 +17,23 @@ body {
   margin: 0px 20px 0px 20px;
 }
 
-.eventBox {
-  margin-left: 500px;
+.eventsList {
+  margin-left: 550px;
   margin-top: -300px;
+  float: right;
+}
+
+div.eventsList {
+  padding: 100px;
   text-align: left;
+  overflow: scroll;
 }
 
 .moodnail {
   display: inline-block;
   text-align: center;
-  margin-left: 150px;
+  margin-left: 250px;
+  float: left;
   p {
     font-size: 50px;
     // font-weight: bold;
